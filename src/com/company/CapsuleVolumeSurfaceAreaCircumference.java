@@ -12,10 +12,10 @@ public class CapsuleVolumeSurfaceAreaCircumference {
 
         final double PI = 3.14159265358979;
 
-        System.out.println("\nEnter value for N: ");
+        System.out.print("\nEnter value for N: ");
         int n = scanner.nextInt();
 
-        System.out.println("\nEnter the length of side a: ");
+        System.out.print("\nEnter the length of side a: ");
         double a = scanner.nextDouble();
 
         System.out.println("Radius\tVolume\t\t\t\t\t\t\tSurface Area\t\tCircumference");
@@ -30,7 +30,7 @@ public class CapsuleVolumeSurfaceAreaCircumference {
             double surfaceArea = 2 * PI * r * (2 * r + a);
             double circumference = 2 * PI * r;
 
-            System.out.printf("%d\t\t%.3f                \t\t%.3f  \t\t\t%.3f\n", r, volume, surfaceArea, circumference);
+            System.out.printf("%d\t\t%.3f                \t\t%.4f  \t\t\t%.4f\n", r, volume, surfaceArea, circumference);
         }
     }
 }
