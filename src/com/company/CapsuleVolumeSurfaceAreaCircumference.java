@@ -18,8 +18,8 @@ public class CapsuleVolumeSurfaceAreaCircumference {
         System.out.print("\nEnter the length of side a: ");
         double a = scanner.nextDouble();
 
-        System.out.println("Radius\tVolume\t\t\t\t\t\t\tSurface Area\t\tCircumference");
-        System.out.println("-----------------------------------------------------------------------");
+        System.out.println("\nRadius\tVolume\t\t\t\t\t\t\tSurface Area\t\tCircumference");
+        System.out.println("---------------------------------------------------------------------------");
 
         for (int r = 6; r <= n; r+=6) {
             // Volume of a capsule: V = πr2((4/3)r + a)
@@ -30,7 +30,7 @@ public class CapsuleVolumeSurfaceAreaCircumference {
             double surfaceArea = 2 * PI * r * (2 * r + a);
             double circumference = 2 * PI * r;
 
-            System.out.printf("%d\t\t%.3f                \t\t%.4f  \t\t\t%.4f\n", r, volume, surfaceArea, circumference);
+            System.out.printf("%d\t\t%.3f                \t\t%.4f \t\t\t\t%.4f\n", r, volume, surfaceArea, circumference);
         }
     }
 }
